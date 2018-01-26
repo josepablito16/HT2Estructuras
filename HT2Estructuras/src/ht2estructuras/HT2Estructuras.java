@@ -5,6 +5,9 @@
  */
 package ht2estructuras;
 
+import java.io.*;
+
+
 /**
  *
  * @author jose
@@ -14,9 +17,26 @@ public class HT2Estructuras {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) 
+    public static void main(String[] args) throws FileNotFoundException, IOException 
     {
-        // TODO code application logic here
+         String linea;
+        File archivo = new File ("C:\\Users\\jose\\Desktop\\DISEÑO\\TRABAJOS\\UVG"
+                + "\\3er Semestre\\Estructura de Datos\\HT\\HT2Estructuras\\"
+                + "HT2Estructuras\\src\\ht2estructuras\\Fuente.txt");
+        FileReader fr = new FileReader (archivo);
+        BufferedReader br = new BufferedReader(fr);
+        while ( (linea = br.readLine()) != null){
+        
+        
+        System.out.println(linea);
+        }
+        
+        /**
+        for (int x=0;x<linea.length();x++)
+        System.out.println(linea.charAt(x));
+        */
+        
+        
     }
     
 }
