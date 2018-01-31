@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package ht2estructuras;
 
 import java.io.*;
@@ -20,21 +16,22 @@ public class HT2Estructuras {
     public static void main(String[] args) throws FileNotFoundException, IOException 
     {
          String linea;
+         Operacion opera = null;
+         /**
         File archivo = new File ("C:\\Users\\jose\\Desktop\\DISEÑO\\TRABAJOS\\UVG"
                 + "\\3er Semestre\\Estructura de Datos\\HT\\HT2Estructuras\\"
                 + "HT2Estructuras\\src\\ht2estructuras\\Fuente.txt");
+        */
+        File archivo = new File ("C:\\Users\\Mafer\\Documents\\GitHub\\HT2Estructuras\\HT2Estructuras\\src\\ht2estructuras\\Fuente.txt");
         FileReader fr = new FileReader (archivo);
         BufferedReader br = new BufferedReader(fr);
+        
         while ( (linea = br.readLine()) != null){
         
-        
-        System.out.println(linea);
+            opera.operar(linea);
+            System.out.println(opera.operar(linea));
         }
         
-        /**
-        for (int x=0;x<linea.length();x++)
-        System.out.println(linea.charAt(x));
-        */
         
         
     }

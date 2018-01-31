@@ -8,5 +8,5 @@ package ht2estructuras;
 public interface Calculadora 
 {
     
-    public int operar(String expresion);
+    public double operar(String expresion);
 }
