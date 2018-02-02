@@ -18,7 +18,7 @@ public class HT2Estructuras {
     public static void main(String[] args) throws FileNotFoundException, IOException 
     {
          String linea;
-         Operacion opera = new Operacion();
+         CalculosL opera = new CalculosL();
          
         /**File archivo = new File ("C:\\Users\\jose\\Desktop\\DISEÑO\\TRABAJOS\\UVG\\3er Semestre\\Estructura de Datos\\HT2\\HT2Estructuras\\HT2Estructuras\\src\\ht2estructuras\\Fuente.txt");
         */
